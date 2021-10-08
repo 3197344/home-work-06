@@ -764,7 +764,11 @@ color: var(--title-text-color);
   color: var(--primary-text-color);
 
 }
+.textarea {
+resize:none;
+width: 100%;
 
+}
 
 /* --------------Портфолио--------------- *
 /* ------------- Наши работы ----------*/
