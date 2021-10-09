@@ -432,26 +432,51 @@
           </li>
         </ul>
       </div>
+      <div  class="footer-box-second">
+        <p class="footer-text">Подпишитесь на рассылку</p>
+        <div>
+          
+            <label for="mail" class="form-label">E-mail</label>
+            <input class="footer-input" type="email" name="mail" id="mail" />
+          
+        </div>
+      </div>
     </div>
   </footer>
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-      <label for="name">Имя</label>
-      <input type="text" name="name" id="name" />
+      
+      <div class="modal-box">
+        <div class="modal-field">
+          <label for="name" class="form-label">Имя</label>
+          <input class="form-input" type="text" name="name" id="name" />
+        </div>
 
-      <label for="tel">Телефон</label>
-      <input type="tel" name="tel" id="tel" />
+        <div class="modal-field">
+          <label for="tel" class="form-label">Телефон</label>
+          <input class="form-input" type="tel" name="tel" id="tel" />
+        </div>
 
-      <label for="mail">Почта</label>
-      <input type="email" name="mail" id="mail" />
+        <div class="modal-field">
+          <label for="mail" class="form-label">Почта</label>
+          <input class="form-input" type="email" name="mail" id="mail" />
+        </div>
 
-      <label for="comment">Комментарий</label>
-      <textarea name="comment" id="comment" rows="10"></textarea>
-
-      <input type="checkbox" name="policy" value="" id="policy">
-      <label class="label-text" for="">Соглашаюсь с рассылкой и принимаю 
-        <a href="" class="modal-link">Условия договора</a> </label>
+        <div class="modal-field">
+          <label for="comment" class="form-label">Комментарий</label>
+          <textarea class="comment" 
+          name="comment" 
+          id="comment" rows="10" placeholder="Введите текст"></textarea>
+        </div>
+      </div>
+      
+      <div class="modal-item"> <input type="checkbox" name="policy" value="" id="policy">
+        <label class="label-text" for="" class="form-label">Соглашаюсь с рассылкой и принимаю
+          <a href="" class="modal-link">Условия договора</a>
+        </label>
+      </div>
 
       <button type="submit" class="modal-button">Отправить</button>
 

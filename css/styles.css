@@ -130,7 +130,7 @@ body {
 
 .header-address:hover,
 .header-address:focus {
-   color: var(--accent-color);
+  color: var(--accent-color);
 }
 .header-address:hover .nav-icon,
 .header-address:focus .nav-icon {
@@ -674,6 +674,23 @@ body {
   pointer-events: none;
 }
 
+.footer-box-second {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+  width: 220px;
+}
+.footer-input {
+  width: 360px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  
+}
+
+/* -------------------модалка-------------------- */
 .modal {
   width: 530px;
   min-height: 580px;
@@ -683,6 +700,7 @@ body {
   border-radius: 4px;
   position: absolute;
   top: 250px;
+  margin: 0 auto;
 }
 .close-btn {
   position: absolute;
@@ -709,26 +727,24 @@ body {
   margin-right: 40px;
   margin-top: 40px;
   margin-bottom: 12px;
-
-
   font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
-.modal-button{
+.modal-button {
   display: block;
   justify-content: center;
   align-items: center;
- margin: 0 auto;
- 
+  margin: 0 auto;
+
   width: 200px;
   height: 50px;
-  
+
   text-align: center;
   border-radius: 4px;
   border: none;
@@ -756,18 +772,86 @@ color: var(--title-text-color);
 .modal-link {
   color: var(--accent-color);
 }
-.label-text{
+.label-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-
 }
 .textarea {
-resize:none;
-width: 100%;
+  resize: none;
+  width: 100%;
+}
 
+.modal-field {
+  margin-left: 41px;
+  margin-right: 39px;
+  width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  /* outline: 1px solid tomato; */
+}
+.modal-box .modal-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+.modal-field .form-input {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.modal-field .comment {
+  margin: 0;
+  padding: 0;
+  margin-top: 4px;
+  min-height: 120px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+.modal-item input[type='checkbox'] {
+  /* width: 16px;
+  height: 15px; */
+  margin-right: 7px;
+}
+
+.modal-field .comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+.modal-button {
+  margin-bottom: 40px;
 }
 
 /* --------------Портфолио--------------- *
