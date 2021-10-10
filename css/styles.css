@@ -430,8 +430,6 @@ body {
 }
 .command-link {
   display: flex;
-  /* padding: 0;
-  margin: 0; */
   justify-content: center;
   align-items: center;
   width: 44px;
@@ -537,10 +535,6 @@ body {
   /* background-color: tomato; */
   align-items: baseline;
 }
-.footer-list {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .footer-logo {
   display: flex;
@@ -558,7 +552,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
+.footer-item {
+  width: 230px;
+}
 .footer-nav {
   /* outline: 2px solid teal;  */
   color: rgb(255, 255, 255, 0.6);
@@ -628,12 +624,12 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-
   align-items: center;
   width: 44px;
   height: 44px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-command-icon {
   display: flex;
   margin: 0 auto;
@@ -641,6 +637,33 @@ body {
   height: 20px;
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-footer {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+
+  font-family: Roboto, sans-serif;
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-footer::before {
+  content:'';
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons.svg#icon-send);
+  background-position: contain;
 }
 
 .footer-command-iconbox:hover,
@@ -678,7 +701,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 90px;
-  width: 220px;
+  width: 570px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input {
   width: 360px;
@@ -687,7 +711,27 @@ body {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  
+  background: #2f303a;
+}
+
+.footer-input:focus + .footer-form-label {
+  color: red;
+}
+.form-field {
+  position: relative;
+}
+.footer-form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+.button-footer:focus,
+.button-footer:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* -------------------модалка-------------------- */

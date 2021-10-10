@@ -432,13 +432,17 @@
           </li>
         </ul>
       </div>
-      <div  class="footer-box-second">
+      <div class="footer-box-second">
         <p class="footer-text">Подпишитесь на рассылку</p>
-        <div>
-          
-            <label for="mail" class="form-label">E-mail</label>
-            <input class="footer-input" type="email" name="mail" id="mail" />
-          
+        <div class="form-field">
+         
+          <input class="footer-input" type="email" name="mail" id="mail" />
+          <label for="mail" class="footer-form-label">E-mail</label>
+
+          <button type="submit" class="button-footer" data-modal-open>
+            Подписаться
+           </button>
+
         </div>
       </div>
     </div>
@@ -447,7 +451,7 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-      
+
       <div class="modal-box">
         <div class="modal-field">
           <label for="name" class="form-label">Имя</label>
@@ -466,12 +470,10 @@
 
         <div class="modal-field">
           <label for="comment" class="form-label">Комментарий</label>
-          <textarea class="comment" 
-          name="comment" 
-          id="comment" rows="10" placeholder="Введите текст"></textarea>
+          <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
         </div>
       </div>
-      
+
       <div class="modal-item"> <input type="checkbox" name="policy" value="" id="policy">
         <label class="label-text" for="" class="form-label">Соглашаюсь с рассылкой и принимаю
           <a href="" class="modal-link">Условия договора</a>
