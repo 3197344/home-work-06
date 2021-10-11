@@ -861,6 +861,21 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
+.form-input{
+  position: relative;
+}
+
+.form-input-icon{
+  position: absolute;
+ top: 0;
+ left: 0;
+ display: inline-block;
+ color: tomato;
+ width: 18px;
+ height: 18px;
+
+}
+
 .comment {
   resize: none;
 }
