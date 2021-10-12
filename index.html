@@ -453,28 +453,36 @@
     <div class="modal">
       <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
 
-      <div class="modal-box">
+      <form class="modal-box">
         <div class="modal-field">
-          <label for="name" class="form-label">Имя</label>
+          <label for="name" class="modal-form-label">Имя</label>
           <input class="form-input" type="text" name="name" id="name" />
-          <span class="form-input-icon"></span>
+          <svg  class="form-input-icon">
+              <use href="./img/icons.svg#icon-person"></use>
+            </svg>
         </div>
 
         <div class="modal-field">
-          <label for="tel" class="form-label">Телефон</label>
+          <label for="tel" class="modal-form-label">Телефон</label>
           <input class="form-input" type="tel" name="tel" id="tel" />
+        <svg class="form-input-icon">
+          <use href="./img/icons.svg#icon-phone"></use>
+        </svg>
         </div>
 
         <div class="modal-field">
-          <label for="mail" class="form-label">Почта</label>
+          <label for="mail" class="modal-form-label">Почта</label>
           <input class="form-input" type="email" name="mail" id="mail" />
+        <svg class="form-input-icon">
+          <use href="./img/icons.svg#icon-email"></use>
+        </svg>
         </div>
 
         <div class="modal-field">
-          <label for="comment" class="form-label">Комментарий</label>
+          <label for="comment" class="modal-form-label">Комментарий</label>
           <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
         </div>
-      </div>
+      </form>
 
       <div class="modal-item"> <input type="checkbox" name="policy" value="" id="policy">
         <label class="label-text" for="" class="form-label">Соглашаюсь с рассылкой и принимаю
