@@ -757,6 +757,7 @@ body {
   top: 200px;
   margin: 0 auto;
   padding: 40px;
+  color: var(--primary-text-color);
 }
 
 .modal-text {
@@ -797,6 +798,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
 
 .form-input-icon {
@@ -853,6 +855,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
 
 .modal-field .comment::placeholder {
@@ -920,13 +923,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  
+
   display: flex;
   margin-left: 12px;
   padding-left: 24px;
   align-items: center;
   position: relative;
-  
 }
 .checkbox-icon {
   fill: var(--title-text-color);
@@ -940,15 +942,14 @@ body {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-
 }
 
 .modal-checkbox:checked + .label-text span {
-    background-image: url(../img/icon/icon-check.svg);
-    border: none;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(../img/icon/icon-check.svg);
+  border: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .modal-link {
